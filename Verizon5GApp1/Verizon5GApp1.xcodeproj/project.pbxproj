@@ -69,7 +69,6 @@
 				94DF8FF420C80A0300034C3F /* Protocol */,
 				94DF8FED20C8096C00034C3F /* Controller */,
 				94DF8FEF20C8096C00034C3F /* Model */,
-				94DF8FF020C8096C00034C3F /* View */,
 				600A552B20C7C2E800472982 /* AppDelegate.swift */,
 				600A552F20C7C2E800472982 /* Main.storyboard */,
 				600A553220C7C2EB00472982 /* Assets.xcassets */,
@@ -97,13 +96,6 @@
 				94CFFA1B20CA5B3E00F4A0E5 /* RestrictedLocation.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		94DF8FF020C8096C00034C3F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		94DF8FF420C80A0300034C3F /* Protocol */ = {
