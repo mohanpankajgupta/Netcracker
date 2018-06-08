@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		600A552C20C7C2E800472982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600A552B20C7C2E800472982 /* AppDelegate.swift */; };
-		600A552E20C7C2E800472982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600A552D20C7C2E800472982 /* ViewController.swift */; };
 		600A553120C7C2E800472982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600A552F20C7C2E800472982 /* Main.storyboard */; };
 		600A553320C7C2EB00472982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600A553220C7C2EB00472982 /* Assets.xcassets */; };
 		600A553620C7C2EB00472982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600A553420C7C2EB00472982 /* LaunchScreen.storyboard */; };
+		94149B8F20C9033E005CFCAE /* HandleMapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */; };
+		94149B9320C94ECF005CFCAE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B9220C94ECF005CFCAE /* SettingViewController.swift */; };
+		94149B9520C960FC005CFCAE /* PostApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B9420C960FC005CFCAE /* PostApiCall.swift */; };
+		94CFFA1A20CA519D00F4A0E5 /* LocationRegions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94CFFA1920CA519D00F4A0E5 /* LocationRegions.plist */; };
+		94CFFA1C20CA5B3E00F4A0E5 /* RestrictedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CFFA1B20CA5B3E00F4A0E5 /* RestrictedLocation.swift */; };
+		94DF8FF120C8096C00034C3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF8FEE20C8096C00034C3F /* ViewController.swift */; };
+		94DF8FF320C809AE00034C3F /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF8FF220C809AE00034C3F /* LocationSearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		600A552820C7C2E800472982 /* Verizon5GApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Verizon5GApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		600A552B20C7C2E800472982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		600A552D20C7C2E800472982 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		600A553020C7C2E800472982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		600A553220C7C2EB00472982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		600A553520C7C2EB00472982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		600A553720C7C2EB00472982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleMapSearch.swift; sourceTree = "<group>"; };
+		94149B9220C94ECF005CFCAE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		94149B9420C960FC005CFCAE /* PostApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiCall.swift; sourceTree = "<group>"; };
+		94CFFA1920CA519D00F4A0E5 /* LocationRegions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LocationRegions.plist; sourceTree = "<group>"; };
+		94CFFA1B20CA5B3E00F4A0E5 /* RestrictedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictedLocation.swift; sourceTree = "<group>"; };
+		94DF8FEE20C8096C00034C3F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94DF8FF220C809AE00034C3F /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		600A552A20C7C2E800472982 /* Verizon5GApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				94DF8FF420C80A0300034C3F /* Protocol */,
+				94DF8FED20C8096C00034C3F /* Controller */,
+				94DF8FEF20C8096C00034C3F /* Model */,
+				94DF8FF020C8096C00034C3F /* View */,
 				600A552B20C7C2E800472982 /* AppDelegate.swift */,
-				600A552D20C7C2E800472982 /* ViewController.swift */,
 				600A552F20C7C2E800472982 /* Main.storyboard */,
 				600A553220C7C2EB00472982 /* Assets.xcassets */,
 				600A553420C7C2EB00472982 /* LaunchScreen.storyboard */,
 				600A553720C7C2EB00472982 /* Info.plist */,
+				94CFFA1920CA519D00F4A0E5 /* LocationRegions.plist */,
 			);
 			path = Verizon5GApp1;
+			sourceTree = "<group>";
+		};
+		94DF8FED20C8096C00034C3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94DF8FEE20C8096C00034C3F /* ViewController.swift */,
+				94DF8FF220C809AE00034C3F /* LocationSearchTableViewController.swift */,
+				94149B9220C94ECF005CFCAE /* SettingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94DF8FEF20C8096C00034C3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94149B9420C960FC005CFCAE /* PostApiCall.swift */,
+				94CFFA1B20CA5B3E00F4A0E5 /* RestrictedLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94DF8FF020C8096C00034C3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94DF8FF420C80A0300034C3F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +175,7 @@
 				600A553620C7C2EB00472982 /* LaunchScreen.storyboard in Resources */,
 				600A553320C7C2EB00472982 /* Assets.xcassets in Resources */,
 				600A553120C7C2E800472982 /* Main.storyboard in Resources */,
+				94CFFA1A20CA519D00F4A0E5 /* LocationRegions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600A552E20C7C2E800472982 /* ViewController.swift in Sources */,
+				94149B8F20C9033E005CFCAE /* HandleMapSearch.swift in Sources */,
+				94DF8FF120C8096C00034C3F /* ViewController.swift in Sources */,
+				94DF8FF320C809AE00034C3F /* LocationSearchTableViewController.swift in Sources */,
 				600A552C20C7C2E800472982 /* AppDelegate.swift in Sources */,
+				94CFFA1C20CA5B3E00F4A0E5 /* RestrictedLocation.swift in Sources */,
+				94149B9320C94ECF005CFCAE /* SettingViewController.swift in Sources */,
+				94149B9520C960FC005CFCAE /* PostApiCall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -281,13 +337,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82LE9M6999;
+				DEVELOPMENT_TEAM = VU7MBVWDAC;
 				INFOPLIST_FILE = Verizon5GApp1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netcracker.Verizon5GApp1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcracker.Verizon5GApp1new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,13 +355,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82LE9M6999;
+				DEVELOPMENT_TEAM = VU7MBVWDAC;
 				INFOPLIST_FILE = Verizon5GApp1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netcracker.Verizon5GApp1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcracker.Verizon5GApp1new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
