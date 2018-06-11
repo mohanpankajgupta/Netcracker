@@ -12,7 +12,7 @@ import MapKit
 let locationManager = CLLocationManager()
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,8 +20,10 @@ class ViewController: UIViewController {
         setupMap()
         setupLocationSearchTable()
         configureSearchBar()
+        
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 46, height: 46)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -50,7 +52,7 @@ class ViewController: UIViewController {
         
         searchBar?.sizeToFit()
         searchBar?.placeholder = "Search for places"
-    
+        
         navigationItem.titleView = resultSearchController?.searchBar
         
         resultSearchController?.hidesNavigationBarDuringPresentation = false
@@ -64,6 +66,7 @@ class ViewController: UIViewController {
     
     @objc private func navigateToSettingScreen() {
         let settingViewController = storyboard?.instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
+        settingViewController.handleConfigurationDataDelegate = self
         navigationController?.pushViewController(settingViewController, animated: true)
     }
     
@@ -83,7 +86,7 @@ class ViewController: UIViewController {
         }
         
         let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { (alert) -> Void in
-            print("Cancel Pressed")
+            
         }
         
         actionSheet.addAction(service1)
@@ -141,9 +144,7 @@ class ViewController: UIViewController {
             
             if let restrictedAreaLat = restrictedArea.lat, let restrictedAreaLong = restrictedArea.long, let restrictedAreaRadious = restrictedArea.radious, let selectedLat = selectedLocation?.latitude, let selectedLong = selectedLocation?.longitude {
                 let circularRegion = CLCircularRegion(center: CLLocationCoordinate2D(latitude: restrictedAreaLat, longitude: restrictedAreaLong), radius: restrictedAreaRadious, identifier: "Region")
-                let bool = circularRegion.contains(CLLocationCoordinate2D(latitude: selectedLat
-                    , longitude: selectedLong))
-                print(bool)
+                
                 if circularRegion.contains(CLLocationCoordinate2D(latitude: selectedLat
                     , longitude: selectedLong)) {
                     return true
@@ -157,18 +158,48 @@ class ViewController: UIViewController {
     }
     
     private func displayAlert() {
+        
         if checkForRestrictedLocation() {
             let alert = UIAlertController(title: "Poor Coverage", message: "We can not guarantee requested quality of service at this location.", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Activate", style: .default, handler: {action in
                 //call post service
+                self.callPostApi()
                 
             }))
             
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             
             self.present(alert, animated: true)
+        } else {
+            callPostApi()
         }
+        
+    }
+    
+    private func callPostApi() {
+        activityIndicator.startAnimating()
+        mapView.addSubview(activityIndicator)
+        
+        self.networkCall.makePostRequest(urlString: postApiUrl
+            , headerBody: self.headerDictionary, completion: { (result, response, error) in
+                
+                DispatchQueue.main.async {
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.removeFromSuperview()
+                    
+                    guard let result = result as? PostApiCall else {
+                        return
+                    }
+                    
+                    let alert = UIAlertController(title: "Alert!", message: result.message, preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    
+                    self.present(alert, animated: true)
+                }
+                
+        })
     }
     
     //MARK: Private variables
@@ -178,6 +209,9 @@ class ViewController: UIViewController {
     private let annotation = MKPointAnnotation()
     private var restricteAreaArray = [RestrictedLocation]()
     private var selectedLocation: CLLocationCoordinate2D?
+    private let networkCall = NetworkManager()
+    private var headerDictionary = [String: Any]()
+    private var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
     
     @IBAction func openSettingAppButtonAction(_ sender: Any) {
         
@@ -248,7 +282,7 @@ extension ViewController: CLLocationManagerDelegate {
             
             let span = MKCoordinateSpanMake(0.05, 0.05)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
-        
+            
             mapView.setRegion(region, animated: true)
             
             annotation.coordinate = location.coordinate
@@ -285,5 +319,11 @@ extension ViewController: HandleMapSearch {
         mapView.setRegion(region, animated: true)
     }
     
+}
+
+extension ViewController: HandleConfigureData {
+    func shareConfigurationData(configDictionary: [String : Any]) {
+        self.headerDictionary = configDictionary
+    }
 }
 

@@ -10,4 +10,11 @@ import Foundation
 
 class PostApiCall {
     
+    var statusCode: Int?
+    var message: String?
+    var eventId: String?
+    var eventSource: String?
+    var eventType: String?
+    var attributes: [PostApiIdAndValues]?
+    
 }

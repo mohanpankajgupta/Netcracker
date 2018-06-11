@@ -14,8 +14,13 @@
 		94149B8F20C9033E005CFCAE /* HandleMapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */; };
 		94149B9320C94ECF005CFCAE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B9220C94ECF005CFCAE /* SettingViewController.swift */; };
 		94149B9520C960FC005CFCAE /* PostApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B9420C960FC005CFCAE /* PostApiCall.swift */; };
+		9453562D20CE37940084009A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453562C20CE37940084009A /* NetworkManager.swift */; };
+		9453562F20CE4EB00084009A /* HandleConfigureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453562E20CE4EB00084009A /* HandleConfigureData.swift */; };
+		9453563120CE70220084009A /* PostApiIdAndValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453563020CE70220084009A /* PostApiIdAndValues.swift */; };
+		9453563420CE70E50084009A /* ParsePostApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453563320CE70E50084009A /* ParsePostApiResponse.swift */; };
 		94CFFA1A20CA519D00F4A0E5 /* LocationRegions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94CFFA1920CA519D00F4A0E5 /* LocationRegions.plist */; };
 		94CFFA1C20CA5B3E00F4A0E5 /* RestrictedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CFFA1B20CA5B3E00F4A0E5 /* RestrictedLocation.swift */; };
+		94CFFA1F20CA9BFA00F4A0E5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CFFA1E20CA9BFA00F4A0E5 /* Utility.swift */; };
 		94DF8FF120C8096C00034C3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF8FEE20C8096C00034C3F /* ViewController.swift */; };
 		94DF8FF320C809AE00034C3F /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF8FF220C809AE00034C3F /* LocationSearchTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,8 +35,13 @@
 		94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleMapSearch.swift; sourceTree = "<group>"; };
 		94149B9220C94ECF005CFCAE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		94149B9420C960FC005CFCAE /* PostApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiCall.swift; sourceTree = "<group>"; };
+		9453562C20CE37940084009A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9453562E20CE4EB00084009A /* HandleConfigureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleConfigureData.swift; sourceTree = "<group>"; };
+		9453563020CE70220084009A /* PostApiIdAndValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiIdAndValues.swift; sourceTree = "<group>"; };
+		9453563320CE70E50084009A /* ParsePostApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsePostApiResponse.swift; sourceTree = "<group>"; };
 		94CFFA1920CA519D00F4A0E5 /* LocationRegions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LocationRegions.plist; sourceTree = "<group>"; };
 		94CFFA1B20CA5B3E00F4A0E5 /* RestrictedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictedLocation.swift; sourceTree = "<group>"; };
+		94CFFA1E20CA9BFA00F4A0E5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		94DF8FEE20C8096C00034C3F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94DF8FF220C809AE00034C3F /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +76,9 @@
 		600A552A20C7C2E800472982 /* Verizon5GApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				9453563220CE70C00084009A /* Parser */,
+				9453562B20CE370D0084009A /* NetworkConnectivity */,
+				94CFFA1D20CA9BCC00F4A0E5 /* Utility */,
 				94DF8FF420C80A0300034C3F /* Protocol */,
 				94DF8FED20C8096C00034C3F /* Controller */,
 				94DF8FEF20C8096C00034C3F /* Model */,
@@ -77,6 +90,30 @@
 				94CFFA1920CA519D00F4A0E5 /* LocationRegions.plist */,
 			);
 			path = Verizon5GApp1;
+			sourceTree = "<group>";
+		};
+		9453562B20CE370D0084009A /* NetworkConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				9453562C20CE37940084009A /* NetworkManager.swift */,
+			);
+			path = NetworkConnectivity;
+			sourceTree = "<group>";
+		};
+		9453563220CE70C00084009A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				9453563320CE70E50084009A /* ParsePostApiResponse.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		94CFFA1D20CA9BCC00F4A0E5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				94CFFA1E20CA9BFA00F4A0E5 /* Utility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		94DF8FED20C8096C00034C3F /* Controller */ = {
@@ -94,6 +131,7 @@
 			children = (
 				94149B9420C960FC005CFCAE /* PostApiCall.swift */,
 				94CFFA1B20CA5B3E00F4A0E5 /* RestrictedLocation.swift */,
+				9453563020CE70220084009A /* PostApiIdAndValues.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */,
+				9453562E20CE4EB00084009A /* HandleConfigureData.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -178,10 +217,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9453563120CE70220084009A /* PostApiIdAndValues.swift in Sources */,
+				9453562F20CE4EB00084009A /* HandleConfigureData.swift in Sources */,
+				9453562D20CE37940084009A /* NetworkManager.swift in Sources */,
+				9453563420CE70E50084009A /* ParsePostApiResponse.swift in Sources */,
 				94149B8F20C9033E005CFCAE /* HandleMapSearch.swift in Sources */,
 				94DF8FF120C8096C00034C3F /* ViewController.swift in Sources */,
 				94DF8FF320C809AE00034C3F /* LocationSearchTableViewController.swift in Sources */,
 				600A552C20C7C2E800472982 /* AppDelegate.swift in Sources */,
+				94CFFA1F20CA9BFA00F4A0E5 /* Utility.swift in Sources */,
 				94CFFA1C20CA5B3E00F4A0E5 /* RestrictedLocation.swift in Sources */,
 				94149B9320C94ECF005CFCAE /* SettingViewController.swift in Sources */,
 				94149B9520C960FC005CFCAE /* PostApiCall.swift in Sources */,
