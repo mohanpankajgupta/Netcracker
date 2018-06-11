@@ -84,6 +84,13 @@ class SettingViewController: UIViewController {
         
         handleConfigurationDataDelegate?.shareConfigurationData(configDictionary: headerDictionary)
         
+        let alert = UIAlertController(title: "Alert!", message: "All configuration saved successfully.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (action) -> Void in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        
+        self.present(alert, animated: true)
+        
         /*if validateTextFields() {
             
             headerDictionary["event_source"] = eventSourceTextField.text
