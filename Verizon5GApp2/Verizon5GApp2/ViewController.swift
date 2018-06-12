@@ -7,19 +7,89 @@
 //
 
 import UIKit
+import UserNotifications
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UNUserNotificationCenterDelegate, UIViewControllerTransitioningDelegate {
+    
+    let center = UNUserNotificationCenter.current()
+    let applePayVC = ApplePayViewController(nibName: "ApplePayViewController", bundle: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        center.delegate = self
+        applePayVC.transitioningDelegate = self
+        let options: UNAuthorizationOptions = [.alert, .sound]
+        createLocalNotification()
+        center.requestAuthorization(options: options) { (granted, error) in
+            if granted{
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func createLocalNotification(){
+        
+        // custom actions
+        let plan1Action = UNNotificationAction(identifier: "Plan1", title: "30 mins - $9.99", options: [])
+        let plan2Action = UNNotificationAction(identifier: "Plan2", title: "24 Hours - $0.10/Megabyte", options: [])
+        let cancelAction = UNNotificationAction(identifier: "Cancel", title: "Cancel", options: [.destructive])
+        let category = UNNotificationCategory(identifier: "NotificationCategory", actions: [plan1Action,plan2Action,cancelAction], intentIdentifiers: [], options: [])
+        center.setNotificationCategories([category])
+        
+        // notification content
+        let content = UNMutableNotificationContent()
+        content.body = "To run the game you need to upgrade your network speed. Please choose one option."
+//        content.title = "some"
+        content.sound = UNNotificationSound.default()
+        content.categoryIdentifier = "NotificationCategory"
+        
+        // trigger with interval
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        let notificationID = "LowLatencyNotification"
+        let request = UNNotificationRequest(identifier: notificationID, content: content, trigger: trigger)
+        
+        // adding the request to notificaiton center
+        center.add(request) { (error) in
+            if let err = error{
+                print(err)
+            }
+        }
     }
-
-
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert,.sound])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
+        
+        switch response.actionIdentifier {
+        case "Plan1":
+            self.present(applePayVC, animated: true) {
+            }
+        case "Plan2":
+            break
+        case "Cancel":
+            break
+        default:
+            break
+        }
+    }
+    
+//    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+//        let alert = UIAlertController(title: "Paid!", message: "You have paid $9.99 through your Apple Pay", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//        self.present(alert, animated: true, completion: nil)
+//        let alert = AlertHelper()
+//        alert.showAlert(fromController: self)
+//        return nil
+//    }
+//}
+//
+//class AlertHelper {
+//    func showAlert(fromController controller: UIViewController) {
+//        let alert = UIAlertController(title: "Paid!", message: "You have paid $9.99 through your Apple Pay", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//        controller.present(alert, animated: true, completion: nil)
+//    }
 }
 
