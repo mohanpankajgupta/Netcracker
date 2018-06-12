@@ -20,8 +20,6 @@ class ViewController: UIViewController {
         setupMap()
         setupLocationSearchTable()
         configureSearchBar()
-        
-        activityIndicator.frame = CGRect(x: 0, y: 0, width: 46, height: 46)
     }
     
     override func didReceiveMemoryWarning() {
@@ -178,28 +176,32 @@ class ViewController: UIViewController {
     }
     
     private func callPostApi() {
-        activityIndicator.startAnimating()
-        mapView.addSubview(activityIndicator)
+        
+        let sv = UIViewController.displaySpinner(onView: self.mapView)
         
         self.networkCall.makePostRequest(urlString: postApiUrl
             , headerBody: self.headerDictionary, completion: { (result, response, error) in
                 
                 DispatchQueue.main.async {
-                    self.activityIndicator.stopAnimating()
-                    self.activityIndicator.removeFromSuperview()
                     
-                    guard let result = result as? PostApiCall else {
-                        return
+                    UIViewController.removeSpinner(spinner: sv)
+                    if let error = error {
+                        self.displayAlert(title: "Alert!", message: error.localizedDescription)
                     }
                     
-                    let alert = UIAlertController(title: "Alert!", message: result.message, preferredStyle: .alert)
-                    
-                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                    
-                    self.present(alert, animated: true)
+                    if let result = result as? PostApiCall, let message = result.message {
+                        self.displayAlert(title: "Alert!", message: message)
+                    }
                 }
-                
         })
+    }
+    
+    private func displayAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
     }
     
     //MARK: Private variables
@@ -211,7 +213,6 @@ class ViewController: UIViewController {
     private var selectedLocation: CLLocationCoordinate2D?
     private let networkCall = NetworkManager()
     private var headerDictionary = [String: Any]()
-    private var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
     
     @IBAction func openSettingAppButtonAction(_ sender: Any) {
         
