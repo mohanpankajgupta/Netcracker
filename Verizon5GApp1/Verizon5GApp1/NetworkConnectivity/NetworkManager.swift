@@ -26,13 +26,22 @@ class NetworkManager {
             locationArray = Utility.seprateString(string: locationString)
         }
         let parameterDictionary = ["relatedParty":
-            [["role": "customer",
-              "id": "\(headerBody["customer"] ?? "")"]],
-                                   "orderItem":[["action" : "modify",
-                                                 "id" : "1",
-                                                 "service": ["id" : "\(headerBody["service"] ?? "")",
-                                                    "serviceCharacteristic": ["name": "location",
-                                                        "value":locationArray]]]]] as [String: Any]
+            [
+                [
+                "role": "customer",
+                "id": "\(headerBody["customer"] ?? "")"
+                ]
+            ],
+            "orderItem":
+                [
+                    ["action" : "modify",
+                    "id" : "1",
+                    "service":
+                        ["id" : "\(headerBody["service"] ?? "")",
+                        "serviceCharacteristic": [
+                            ["name": "location",
+                             "value":[]]
+                            ]]]]] as [String: Any]
         
         print(parameterDictionary)
         
