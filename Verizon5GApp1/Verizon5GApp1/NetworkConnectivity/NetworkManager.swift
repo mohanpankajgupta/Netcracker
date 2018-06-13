@@ -40,7 +40,7 @@ class NetworkManager {
                         ["id" : "\(headerBody["service"] ?? "")",
                         "serviceCharacteristic": [
                             ["name": "location",
-                             "value":[]]
+                             "value":locationArray]
                             ]]]]] as [String: Any]
         
         print(parameterDictionary)
