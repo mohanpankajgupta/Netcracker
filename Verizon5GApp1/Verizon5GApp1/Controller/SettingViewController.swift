@@ -12,7 +12,6 @@ class SettingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventDateTextField.text = Utility.date(from: Date())
         createToolBar()
     }
     
@@ -33,12 +32,10 @@ class SettingViewController: UIViewController {
         
         toolBar.setItems([ spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
-        eventSourceTextField.inputAccessoryView = toolBar
-        eventDateTextField.inputAccessoryView = toolBar
-        attr1TextField.inputAccessoryView = toolBar
-        attr3TextField.inputAccessoryView = toolBar
-        sliceTextField.inputAccessoryView = toolBar
-        volumeTextField.inputAccessoryView = toolBar
+        
+        customerTextField.inputAccessoryView = toolBar
+        serviceTextField.inputAccessoryView = toolBar
+        locationTextField.inputAccessoryView = toolBar
     }
     
     /*private func validateTextFields() -> Bool {
@@ -48,39 +45,33 @@ class SettingViewController: UIViewController {
         return true
     }*/
     
+    /*private func createTextFieldForLocation() {
+        var dynamicLabel = UITextField(frame: CGRect(x: <#T##Int#>, y: <#T##Int#>, width: <#T##Int#>, height: <#T##Int#>))
+        dynamicLabel.frame =
+            CGRectMake(50, 150, 200, 21)
+        dynamicLabel.backgroundColor = UIColor.orangeColor()
+        dynamicLabel.textColor = UIColor.blackColor()
+        dynamicLabel.textAlignment = NSTextAlignment.Center
+        dynamicLabel.text = "test label"
+        self.view.addSubview(dynamicLabel)
+    }*/
+    
     @objc private func dismissPicker() {
         view.endEditing(true)
-    }
-    
-    @objc private func datePickerValueChanged(sender:UIDatePicker) {
-        eventDateTextField.text = Utility.date(from: sender.date)
     }
     
     //MARK: Private variables
     private var headerDictionary = [String: Any]()
    
     //MARK: IBAction
-    @IBAction func eventDateTextField(_ sender: UITextField) {
-        let datePickerView:UIDatePicker = UIDatePicker()
-        
-        datePickerView.minimumDate = Date()
-        datePickerView.datePickerMode = UIDatePickerMode.dateAndTime
-        
-        sender.inputView = datePickerView
-        
-        datePickerView.addTarget(self, action: #selector(SettingViewController.datePickerValueChanged), for: .valueChanged)
-    }
-    
+   
     @IBAction func saveButtonAction(_ sender: Any) {
         
         self.view.endEditing(true)
         
-        headerDictionary["event_source"] = eventSourceTextField.text ?? "99910001000"
-        headerDictionary["event_date"] = eventDateTextField.text
-        headerDictionary["attr1"] = attr1TextField.text ?? "02453"
-        headerDictionary["attr3"] = attr3TextField.text ?? "NORMALQOS"
-        headerDictionary["Slice"] = sliceTextField.text ?? "regular"
-        headerDictionary["Volume"] = volumeTextField.text ?? "1500"
+        headerDictionary["customer"] = customerTextField.text
+        headerDictionary["service"] = serviceTextField.text
+        headerDictionary["location"] = locationTextField.text
         
         handleConfigurationDataDelegate?.shareConfigurationData(configDictionary: headerDictionary)
         
@@ -113,10 +104,7 @@ class SettingViewController: UIViewController {
     
     //MARK: IBOutlets
     
-    @IBOutlet var eventDateTextField: UITextField!
-    @IBOutlet var eventSourceTextField: UITextField!
-    @IBOutlet var attr1TextField: UITextField!
-    @IBOutlet var attr3TextField: UITextField!
-    @IBOutlet var sliceTextField: UITextField!
-    @IBOutlet var volumeTextField: UITextField!
+    @IBOutlet var customerTextField: UITextField!
+    @IBOutlet var serviceTextField: UITextField!
+    @IBOutlet var locationTextField: UITextField!
 }

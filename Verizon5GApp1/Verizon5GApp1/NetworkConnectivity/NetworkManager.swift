@@ -17,9 +17,26 @@ class NetworkManager {
         let url = URL(string: urlString)
         
         var urlRequest = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30)
-        let defaultDate = Utility.date(from: Date())
         
-        let parameterDictionary = ["event_id": "VZW5G0599",
+        
+        var locationArray = [String]()
+        
+        
+        if let locationString = headerBody["location"] as? String {
+            locationArray = Utility.seprateString(string: locationString)
+        }
+        let parameterDictionary = ["relatedParty":
+            [["role": "customer",
+              "id": "\(headerBody["customer"] ?? "")"]],
+                                   "orderItem":[["action" : "modify",
+                                                 "id" : "1",
+                                                 "service": ["id" : "\(headerBody["service"] ?? "")",
+                                                    "serviceCharacteristic": ["name": "location",
+                                                        "value":locationArray]]]]] as [String: Any]
+        
+        print(parameterDictionary)
+        
+        /*["event_id": "VZW5G0599",
          "check_duplicate": false,
          "rejected_count": "0",
          "credit_check": false,
@@ -47,7 +64,7 @@ class NetworkManager {
             ["id": 24,
                 "name": "attr24",
                 "value": "(service_specific)"]]
-            ] as [String : Any]
+            ] as [String : Any]*/
         
         urlRequest.httpMethod = "POST"
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -55,6 +72,7 @@ class NetworkManager {
         guard let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: []) else {
             return
         }
+        print(httpBody)
         urlRequest.httpBody = httpBody
         
         let task = session.dataTask(with: urlRequest) { (data, response, error) in

@@ -9,7 +9,7 @@
 import Foundation
 
 typealias CallbackBlock = (_ result: Any?, _ response:URLResponse?, _ error: NSError?) -> Void
-let postApiUrl = "http://10.250.10.132:8091/api/rating/v2/events/submit"
+let postApiUrl = "http://devapp066.netcracker.com:6347/om/api/v1/serviceOrder"
 
 class Utility {
     //MARK: Private variables
@@ -31,5 +31,10 @@ class Utility {
         let date = formatter.string(from: date)
         
         return date
+    }
+    
+    static func seprateString(string: String) -> [String] {
+        let stringArray = string.components(separatedBy: ",")
+        return stringArray
     }
 }

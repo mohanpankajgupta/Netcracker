@@ -15,6 +15,12 @@
 		602858C020CA83B80062C33E /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602858BF20CA83B80062C33E /* LocalAuthentication.framework */; };
 		608EE9FB20CFD12C00E9168D /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608EE9F920CFD12C00E9168D /* ApplePayViewController.swift */; };
 		608EE9FC20CFD12C00E9168D /* ApplePayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608EE9FA20CFD12C00E9168D /* ApplePayViewController.xib */; };
+		940F5CAB20D10782002B2AC5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CAA20D10781002B2AC5 /* SettingViewController.swift */; };
+		940F5CB020D10B2B002B2AC5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CAF20D10B2B002B2AC5 /* NetworkManager.swift */; };
+		940F5CB320D10B60002B2AC5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CB220D10B60002B2AC5 /* Utility.swift */; };
+		940F5CB620D10BA3002B2AC5 /* ParsePostApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CB520D10BA2002B2AC5 /* ParsePostApiResponse.swift */; };
+		940F5CBA20D10BF7002B2AC5 /* PostApiIdAndValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CB820D10BF7002B2AC5 /* PostApiIdAndValues.swift */; };
+		940F5CBB20D10BF7002B2AC5 /* PostApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CB920D10BF7002B2AC5 /* PostApiCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		602858BF20CA83B80062C33E /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		608EE9F920CFD12C00E9168D /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
 		608EE9FA20CFD12C00E9168D /* ApplePayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplePayViewController.xib; sourceTree = "<group>"; };
+		940F5CAA20D10781002B2AC5 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		940F5CAF20D10B2B002B2AC5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		940F5CB220D10B60002B2AC5 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		940F5CB520D10BA2002B2AC5 /* ParsePostApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsePostApiResponse.swift; sourceTree = "<group>"; };
+		940F5CB820D10BF7002B2AC5 /* PostApiIdAndValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostApiIdAndValues.swift; sourceTree = "<group>"; };
+		940F5CB920D10BF7002B2AC5 /* PostApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostApiCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,11 @@
 		600A554820C7E63B00472982 /* Verizon5GApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				940F5CB720D10BF7002B2AC5 /* Model */,
+				940F5CB420D10BA2002B2AC5 /* Parser */,
+				940F5CB120D10B60002B2AC5 /* Utility */,
+				940F5CAE20D10B2B002B2AC5 /* NetworkConnectivity */,
+				940F5CAA20D10781002B2AC5 /* SettingViewController.swift */,
 				600A554920C7E63B00472982 /* AppDelegate.swift */,
 				600A554B20C7E63B00472982 /* ViewController.swift */,
 				608EE9F920CFD12C00E9168D /* ApplePayViewController.swift */,
@@ -80,6 +97,39 @@
 				602858BF20CA83B80062C33E /* LocalAuthentication.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		940F5CAE20D10B2B002B2AC5 /* NetworkConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				940F5CAF20D10B2B002B2AC5 /* NetworkManager.swift */,
+			);
+			path = NetworkConnectivity;
+			sourceTree = "<group>";
+		};
+		940F5CB120D10B60002B2AC5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				940F5CB220D10B60002B2AC5 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		940F5CB420D10BA2002B2AC5 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				940F5CB520D10BA2002B2AC5 /* ParsePostApiResponse.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		940F5CB720D10BF7002B2AC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				940F5CB820D10BF7002B2AC5 /* PostApiIdAndValues.swift */,
+				940F5CB920D10BF7002B2AC5 /* PostApiCall.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940F5CBB20D10BF7002B2AC5 /* PostApiCall.swift in Sources */,
 				600A554C20C7E63B00472982 /* ViewController.swift in Sources */,
 				608EE9FB20CFD12C00E9168D /* ApplePayViewController.swift in Sources */,
+				940F5CB320D10B60002B2AC5 /* Utility.swift in Sources */,
+				940F5CBA20D10BF7002B2AC5 /* PostApiIdAndValues.swift in Sources */,
+				940F5CB020D10B2B002B2AC5 /* NetworkManager.swift in Sources */,
 				600A554A20C7E63B00472982 /* AppDelegate.swift in Sources */,
+				940F5CAB20D10782002B2AC5 /* SettingViewController.swift in Sources */,
+				940F5CB620D10BA3002B2AC5 /* ParsePostApiResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,9 @@
 		600A553120C7C2E800472982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600A552F20C7C2E800472982 /* Main.storyboard */; };
 		600A553320C7C2EB00472982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600A553220C7C2EB00472982 /* Assets.xcassets */; };
 		600A553620C7C2EB00472982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600A553420C7C2EB00472982 /* LaunchScreen.storyboard */; };
+		940F5CAD20D10AD1002B2AC5 /* ServiceOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CAC20D10AD1002B2AC5 /* ServiceOrder.swift */; };
+		940F5CBD20D1167D002B2AC5 /* RelatedParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CBC20D1167D002B2AC5 /* RelatedParty.swift */; };
+		940F5CBF20D116EC002B2AC5 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CBE20D116EC002B2AC5 /* OrderItem.swift */; };
 		94149B8F20C9033E005CFCAE /* HandleMapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */; };
 		94149B9320C94ECF005CFCAE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B9220C94ECF005CFCAE /* SettingViewController.swift */; };
 		94149B9520C960FC005CFCAE /* PostApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B9420C960FC005CFCAE /* PostApiCall.swift */; };
@@ -33,6 +36,9 @@
 		600A553220C7C2EB00472982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		600A553520C7C2EB00472982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		600A553720C7C2EB00472982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940F5CAC20D10AD1002B2AC5 /* ServiceOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceOrder.swift; sourceTree = "<group>"; };
+		940F5CBC20D1167D002B2AC5 /* RelatedParty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedParty.swift; sourceTree = "<group>"; };
+		940F5CBE20D116EC002B2AC5 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleMapSearch.swift; sourceTree = "<group>"; };
 		94149B9220C94ECF005CFCAE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		94149B9420C960FC005CFCAE /* PostApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiCall.swift; sourceTree = "<group>"; };
@@ -135,6 +141,9 @@
 				94149B9420C960FC005CFCAE /* PostApiCall.swift */,
 				94CFFA1B20CA5B3E00F4A0E5 /* RestrictedLocation.swift */,
 				9453563020CE70220084009A /* PostApiIdAndValues.swift */,
+				940F5CAC20D10AD1002B2AC5 /* ServiceOrder.swift */,
+				940F5CBC20D1167D002B2AC5 /* RelatedParty.swift */,
+				940F5CBE20D116EC002B2AC5 /* OrderItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,8 +230,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9453563120CE70220084009A /* PostApiIdAndValues.swift in Sources */,
+				940F5CBD20D1167D002B2AC5 /* RelatedParty.swift in Sources */,
 				9453562F20CE4EB00084009A /* HandleConfigureData.swift in Sources */,
+				940F5CAD20D10AD1002B2AC5 /* ServiceOrder.swift in Sources */,
 				9453562D20CE37940084009A /* NetworkManager.swift in Sources */,
+				940F5CBF20D116EC002B2AC5 /* OrderItem.swift in Sources */,
 				9453563420CE70E50084009A /* ParsePostApiResponse.swift in Sources */,
 				94149B8F20C9033E005CFCAE /* HandleMapSearch.swift in Sources */,
 				94DF8FF120C8096C00034C3F /* ViewController.swift in Sources */,
