@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         setupMap()
         setupLocationSearchTable()
         configureSearchBar()
+        configureHeaderDicWithDefaultValue()
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,6 +29,12 @@ class ViewController: UIViewController {
     }
     
     //MARK: Private methods
+    private func configureHeaderDicWithDefaultValue() {
+        headerDictionary["customer"] = "VZW5GBCNNBA001"
+        headerDictionary["service"] = "CNN1005"
+        headerDictionary["location"] = "ENB02453,ENB02454"
+    }
+    
     private func setupMap() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest

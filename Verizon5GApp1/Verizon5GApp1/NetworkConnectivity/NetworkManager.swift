@@ -21,10 +21,10 @@ class NetworkManager {
         
         var locationArray = [String]()
         
-        
         if let locationString = headerBody["location"] as? String {
             locationArray = Utility.seprateString(string: locationString)
         }
+        
         let parameterDictionary = ["relatedParty":
             [
                 [
