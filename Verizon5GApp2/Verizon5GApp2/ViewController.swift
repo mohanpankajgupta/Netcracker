@@ -71,6 +71,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, UIView
         
         switch response.actionIdentifier {
         case "Plan1":
+            applePayVC.headerDictionary = self.headerDictionary
             self.present(applePayVC, animated: true) {
             }
         case "Plan2":

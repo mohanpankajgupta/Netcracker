@@ -19,9 +19,35 @@ class ApplePayViewController: UIViewController {
     }
 
     @IBAction func payTouchIDTouchUpInside(_ sender: UIButton) {
+        callPostApi()
         authenticateUser()
-        
     }
+    
+    private func callPostApi() {
+        
+        let sv = UIViewController.displaySpinner(onView: self.view)
+        
+        self.networkCall.makePostRequest(urlString: postApiUrl
+            , headerBody: self.headerDictionary, completion: { (result, response, error) in
+                
+                DispatchQueue.main.async {
+                    
+                    UIViewController.removeSpinner(spinner: sv)
+                    if let _ = error {
+                        //                        self.displayAlert(title: "Activation Failure", message: "Unable to activate your service. Please give us a call or try again later.", callCancel: true)
+                    }
+                    
+                    if let _ = result {
+                        //                        if let _ = result.error {
+                        //                            self.displayAlert(title: "Activation Failure", message: "Unable to activate your service. Please give us a call or try again later.", callCancel: true)
+                        //                        } else {
+                        //                            self.displayAlert(title: "Success", message: "Activation request successfully submitted.", callCancel: false)
+                        //                        }
+                    }
+                }
+        })
+    }
+    
     func authenticateUser()
     {
         let la = LAContext()
@@ -39,6 +65,10 @@ class ApplePayViewController: UIViewController {
             }
         }
     }
+    
+    var headerDictionary = [String: Any]()
+    private let networkCall = NetworkManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
