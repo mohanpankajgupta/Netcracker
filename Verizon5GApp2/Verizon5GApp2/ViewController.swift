@@ -14,19 +14,29 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, UIView
     let center = UNUserNotificationCenter.current()
     let applePayVC = ApplePayViewController(nibName: "ApplePayViewController", bundle: nil)
     private var headerDictionary = [String: Any]()
-    private let networkCall = NetworkManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         center.delegate = self
         applePayVC.transitioningDelegate = self
         addSettingScreen()
+        defaultHeaderBody()
         let options: UNAuthorizationOptions = [.alert, .sound]
         createLocalNotification()
         center.requestAuthorization(options: options) { (granted, error) in
             if granted{
             }
         }
+        
+    }
+    
+    private func defaultHeaderBody() {
+        headerDictionary["event_source"] = "99910001000"
+        headerDictionary["Location"] = "02453"
+        headerDictionary["SponsorID"] = ""
+        headerDictionary["SliceID"] = "HIGHQOS"
+        headerDictionary["Latency"] = "5"
+        headerDictionary["Usage, KB"] = "100"
     }
     
     private func addSettingScreen() {
@@ -67,47 +77,12 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, UIView
         completionHandler([.alert,.sound])
     }
     
-    private func callPostApi() {
-        
-        let sv = UIViewController.displaySpinner(onView: self.view)
-        
-        self.networkCall.makePostRequest(urlString: postApiUrl
-            , headerBody: self.headerDictionary, completion: { (result, response, error) in
-                
-                DispatchQueue.main.async {
-                    
-                    UIViewController.removeSpinner(spinner: sv)
-                    if let _ = error {
-                        self.displayAlert(title: "Activation Failure", message: "Unable to activate your service. Please give us a call or try again later.", callCancel: true)
-                    }
-                    
-                    if let _ = result as? PostApiCall {
-                        self.displayAlert(title: "Success", message: "Activation request successfully submitted.", callCancel: false)
-                    }
-                }
-        })
-    }
-    
-    private func displayAlert(title: String, message: String, callCancel: Bool) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        if callCancel {
-            alert.addAction(UIAlertAction(title: "Call", style: .cancel, handler: nil))
-            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-        } else {
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
-                self.dismiss(animated: true, completion: nil)
-            }))
-        }
-        self.present(alert, animated: true)
-    }
-    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         completionHandler()
         
         switch response.actionIdentifier {
         case "Plan1":
-            callPostApi()
+            applePayVC.headerDictionary = self.headerDictionary
             self.present(applePayVC, animated: true) {
             }
         case "Plan2":
