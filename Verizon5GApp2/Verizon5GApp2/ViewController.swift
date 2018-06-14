@@ -61,7 +61,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, UIView
         content.categoryIdentifier = "NotificationCategory"
         
         // trigger with interval
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         let notificationID = "LowLatencyNotification"
         let request = UNNotificationRequest(identifier: notificationID, content: content, trigger: trigger)
         
