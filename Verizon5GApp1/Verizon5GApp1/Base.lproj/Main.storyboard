@@ -256,7 +256,7 @@
                     </view>
                     <connections>
                         <outlet property="customerTextField" destination="Fvf-Hj-X4U" id="rD9-0D-Ttr"/>
-                        <outlet property="locationTextField" destination="irA-xM-eK3" id="fJV-rC-vry"/>
+                        <outlet property="locationTextField" destination="irA-xM-eK3" id="P6f-Ww-5SL"/>
                         <outlet property="serviceTextField" destination="MAj-pj-oeg" id="q14-ea-kE1"/>
                     </connections>
                 </viewController>
