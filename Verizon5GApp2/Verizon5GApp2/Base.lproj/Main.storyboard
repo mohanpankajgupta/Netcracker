@@ -152,7 +152,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-oi-uvH">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-oi-uvH">
                                                                 <rect key="frame" x="119.33333333333336" y="0.0" width="254.66666666666663" height="30"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -218,7 +218,7 @@
                         <outlet property="eventSourceTextField" destination="rVl-Zz-IE7" id="t39-dw-YhB"/>
                         <outlet property="latencyTextField" destination="cyD-pb-LLL" id="nor-9K-0tf"/>
                         <outlet property="locationTextField" destination="YZ5-eL-5gU" id="ozm-zs-PMj"/>
-                        <outlet property="sliceTextField" destination="Oux-2X-kwX" id="trr-3g-qWh"/>
+                        <outlet property="sliceIdTextField" destination="Oux-2X-kwX" id="TFY-2Y-OvL"/>
                         <outlet property="sponserIdTextField" destination="4uB-yw-Frm" id="BvA-Kl-Tok"/>
                         <outlet property="usageKbTextField" destination="i8g-oi-uvH" id="tev-cY-fSP"/>
                     </connections>

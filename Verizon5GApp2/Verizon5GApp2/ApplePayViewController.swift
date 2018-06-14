@@ -19,33 +19,7 @@ class ApplePayViewController: UIViewController {
     }
 
     @IBAction func payTouchIDTouchUpInside(_ sender: UIButton) {
-        callPostApi()
         authenticateUser()
-    }
-    
-    private func callPostApi() {
-        
-        let sv = UIViewController.displaySpinner(onView: self.view)
-        
-        self.networkCall.makePostRequest(urlString: postApiUrl
-            , headerBody: self.headerDictionary, completion: { (result, response, error) in
-                
-                DispatchQueue.main.async {
-                    
-                    UIViewController.removeSpinner(spinner: sv)
-                    if let _ = error {
-                        //                        self.displayAlert(title: "Activation Failure", message: "Unable to activate your service. Please give us a call or try again later.", callCancel: true)
-                    }
-                    
-                    if let _ = result {
-                        //                        if let _ = result.error {
-                        //                            self.displayAlert(title: "Activation Failure", message: "Unable to activate your service. Please give us a call or try again later.", callCancel: true)
-                        //                        } else {
-                        //                            self.displayAlert(title: "Success", message: "Activation request successfully submitted.", callCancel: false)
-                        //                        }
-                    }
-                }
-        })
     }
     
     func authenticateUser()
@@ -55,19 +29,18 @@ class ApplePayViewController: UIViewController {
         if la.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error){
             la.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Authentiate to pay") { (granted, error) in
                 if granted{
-//                    print("granted")
-                    let alert = UIAlertController(title: "Paid!", message: "You have paid $9.99 through your Apple Pay", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
-                        self.dismiss(animated: true, completion: nil)
-                    }))
-                    self.present(alert, animated: true, completion: nil)
+                    //                    print("granted")
+                    DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Paid!", message: "You have paid $9.99 through your Apple Pay", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
+                            self.dismiss(animated: true, completion: nil)
+                        }))
+                        self.present(alert, animated: true, completion: nil)
+                    }
                 }
             }
         }
     }
-    
-    var headerDictionary = [String: Any]()
-    private let networkCall = NetworkManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
