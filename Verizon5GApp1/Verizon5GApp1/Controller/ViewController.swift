@@ -71,15 +71,11 @@ class ViewController: UIViewController {
     private func displayActionsheet() {
         let actionSheet = UIAlertController(title: "Select service", message: "", preferredStyle: .actionSheet)
         
-        let service1 = UIAlertAction(title: "Service1", style: .default, handler: { (action) -> Void in
+        let service1 = UIAlertAction(title: "Activate service now", style: .default, handler: { (action) -> Void in
             self.displayAlert()
         })
         
-        let service2 = UIAlertAction(title: "service2", style: .default) { (alert) -> Void in
-            self.displayAlert()
-        }
-        
-        let service3 = UIAlertAction(title: "service3", style: .default) { (alert) -> Void in
+        let service2 = UIAlertAction(title: "Schedule activation", style: .default) { (alert) -> Void in
             self.displayAlert()
         }
         
@@ -89,7 +85,6 @@ class ViewController: UIViewController {
         
         actionSheet.addAction(service1)
         actionSheet.addAction(service2)
-        actionSheet.addAction(service3)
         actionSheet.addAction(cancelButton)
         
         self.navigationController?.present(actionSheet, animated: true, completion: nil)
@@ -114,7 +109,7 @@ class ViewController: UIViewController {
         
         if let path = Bundle.main.path(forResource: "LocationRegions", ofType: "plist") {
             let dictRoot = NSDictionary(contentsOfFile: path)
-            if let dict = dictRoot, let restricted = dict["Brooklyn"] as? NSArray {
+            if let dict = dictRoot, let restricted = dict["Maine"] as? NSArray {
                 
                 let restrictedLocation = RestrictedLocation()
                 
@@ -133,6 +128,27 @@ class ViewController: UIViewController {
                 restricteAreaArray.append(restrictedLocation)
                 
             }
+            
+            if let dict = dictRoot, let restricted = dict["MA"] as? NSArray {
+                
+                let restrictedLocation = RestrictedLocation()
+                
+                if let radiousString = restricted[0] as? String {
+                    restrictedLocation.radious = CLLocationDistance(radiousString)
+                }
+                
+                if let latString = restricted[1] as? String {
+                    restrictedLocation.lat = CLLocationDegrees(latString)
+                }
+                
+                if let longString = restricted[2] as? String {
+                    restrictedLocation.long = CLLocationDegrees(longString)
+                }
+                
+                restricteAreaArray.append(restrictedLocation)
+                
+            }
+            
         }
     }
     
@@ -142,9 +158,12 @@ class ViewController: UIViewController {
             
             if let restrictedAreaLat = restrictedArea.lat, let restrictedAreaLong = restrictedArea.long, let restrictedAreaRadious = restrictedArea.radious, let selectedLat = selectedLocation?.latitude, let selectedLong = selectedLocation?.longitude {
                 let circularRegion = CLCircularRegion(center: CLLocationCoordinate2D(latitude: restrictedAreaLat, longitude: restrictedAreaLong), radius: restrictedAreaRadious, identifier: "Region")
+                let bool = circularRegion.contains(CLLocationCoordinate2D(latitude: selectedLat
+                    , longitude: selectedLong))
                 
-                if circularRegion.contains(CLLocationCoordinate2D(latitude: selectedLat
-                    , longitude: selectedLong)) {
+                print(bool)
+                
+                if bool {
                     return true
                 }
             }
@@ -158,21 +177,25 @@ class ViewController: UIViewController {
     private func displayAlert() {
         
         if checkForRestrictedLocation() {
-            let alert = UIAlertController(title: "Poor Coverage", message: "We can not guarantee requested quality of service at this location.", preferredStyle: .alert)
-            
-            alert.addAction(UIAlertAction(title: "Activate", style: .default, handler: {action in
-                //call post service
-                self.callPostApi()
-                
-            }))
-            
-            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            
-            self.present(alert, animated: true)
+            displayConfirmationAlert(title: "Poor Coverage", message: "We can not guarantee requested quality of service at this location.")
         } else {
-            callPostApi()
+            displayConfirmationAlert(title: "Service Activation", message: "Activate 5G 4K Broadcasting service within 5 minutes?")
         }
         
+    }
+    
+    private func displayConfirmationAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Activate", style: .default, handler: {action in
+            //call post service
+            self.callPostApi()
+            
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
     }
     
     private func callPostApi() {
@@ -185,22 +208,30 @@ class ViewController: UIViewController {
                 DispatchQueue.main.async {
                     
                     UIViewController.removeSpinner(spinner: sv)
-                    if let error = error {
-                        self.displayAlert(title: "Alert!", message: error.localizedDescription)
+                    if let _ = error {
+                        self.displayAlert(title: "Activation Failure", message: "Unable to activate your service. Please give us a call or try again later.", callCancel: true)
                     }
                     
-                    if let result = result as? PostApiCall, let message = result.message {
-                        self.displayAlert(title: "Alert!", message: message)
+                    if let result = result as? ServiceOrder {
+                        if let _ = result.error {
+                            self.displayAlert(title: "Activation Failure", message: "Unable to activate your service. Please give us a call or try again later.", callCancel: true)
+                        } else {
+                            self.displayAlert(title: "Success", message: "Activation request successfully submitted.", callCancel: false)
+                        }
                     }
                 }
         })
     }
     
-    private func displayAlert(title: String, message: String) {
+    private func displayAlert(title: String, message: String, callCancel: Bool) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        
+        if callCancel {
+            alert.addAction(UIAlertAction(title: "Call", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        } else {
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        }
         self.present(alert, animated: true)
     }
     

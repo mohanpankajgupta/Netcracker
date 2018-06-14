@@ -43,38 +43,6 @@ class NetworkManager {
                              "value":locationArray]
                             ]]]]] as [String: Any]
         
-        print(parameterDictionary)
-        
-        /*["event_id": "VZW5G0599",
-         "check_duplicate": false,
-         "rejected_count": "0",
-         "credit_check": false,
-         "reverse_rate": true,
-         "event_source": "\(headerBody["event_source"] ?? "99910001000")",
-         "event_type": "1000013",
-         "event_date": "\(headerBody["event_date"] ?? defaultDate!)",
-         "domain_id": "1",
-         "attributes":[
-            ["id": 1,
-            "name": "attr1",
-            "value": "\(headerBody["attr1"] ?? "02453")"],
-            ["id": 3,
-            "name": "attr3",
-            "value": "\(headerBody["attr3"] ?? "NORMALQOS")"],
-            ["id": 4,
-              "name": "Slice",
-              "value": "\(headerBody["Slice"] ?? "regular")"],
-            ["id": 5,
-              "name": "Volume",
-              "value": "\(headerBody["Volume"] ?? "1500")"],
-            ["id": 12,
-              "name": "attr12",
-              "value": "1275040370"],
-            ["id": 24,
-                "name": "attr24",
-                "value": "(service_specific)"]]
-            ] as [String : Any]*/
-        
         urlRequest.httpMethod = "POST"
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         

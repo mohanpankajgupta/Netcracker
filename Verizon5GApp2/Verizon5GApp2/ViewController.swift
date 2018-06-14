@@ -13,17 +13,24 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, UIView
     
     let center = UNUserNotificationCenter.current()
     let applePayVC = ApplePayViewController(nibName: "ApplePayViewController", bundle: nil)
+    private var headerDictionary = [String: Any]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         center.delegate = self
         applePayVC.transitioningDelegate = self
+        addSettingScreen()
         let options: UNAuthorizationOptions = [.alert, .sound]
         createLocalNotification()
         center.requestAuthorization(options: options) { (granted, error) in
             if granted{
             }
         }
+    }
+    
+    private func addSettingScreen() {
+        let barButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ViewController.navigateToSettingScreen))
+        navigationItem.rightBarButtonItem = barButton
     }
     
     func createLocalNotification(){
@@ -75,6 +82,12 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, UIView
         }
     }
     
+    @objc private func navigateToSettingScreen() {
+        let settingViewController = storyboard?.instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
+        settingViewController.handleConfigurationDataDelegate = self
+        navigationController?.pushViewController(settingViewController, animated: true)
+    }
+    
 //    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 //        let alert = UIAlertController(title: "Paid!", message: "You have paid $9.99 through your Apple Pay", preferredStyle: .alert)
 //        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -93,3 +106,8 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, UIView
 //    }
 }
 
+extension ViewController: HandleConfigureData {
+    func shareConfigurationData(configDictionary: [String : Any]) {
+        self.headerDictionary = configDictionary
+    }
+}

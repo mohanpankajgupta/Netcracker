@@ -1,5 +1,5 @@
 //
-//  OrderItem.swift
+//  ServiceCharacteristic.swift
 //  Verizon5GApp1
 //
 //  Created by Smita Tamboli on 13/06/18.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-class OrderItem {
-    var action: String?
-    var id: String?
-    var state: String?
-    var service: Service?
+class ServiceCharacteristic {
+    var name: String?
+    var value: String?
 }

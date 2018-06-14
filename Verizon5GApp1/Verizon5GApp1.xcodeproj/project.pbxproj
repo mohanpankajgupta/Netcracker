@@ -14,6 +14,8 @@
 		940F5CAD20D10AD1002B2AC5 /* ServiceOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CAC20D10AD1002B2AC5 /* ServiceOrder.swift */; };
 		940F5CBD20D1167D002B2AC5 /* RelatedParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CBC20D1167D002B2AC5 /* RelatedParty.swift */; };
 		940F5CBF20D116EC002B2AC5 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CBE20D116EC002B2AC5 /* OrderItem.swift */; };
+		940F5CC120D141CE002B2AC5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CC020D141CE002B2AC5 /* Service.swift */; };
+		940F5CC320D14218002B2AC5 /* ServiceCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CC220D14218002B2AC5 /* ServiceCharacteristic.swift */; };
 		94149B8F20C9033E005CFCAE /* HandleMapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */; };
 		94149B9320C94ECF005CFCAE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B9220C94ECF005CFCAE /* SettingViewController.swift */; };
 		94149B9520C960FC005CFCAE /* PostApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94149B9420C960FC005CFCAE /* PostApiCall.swift */; };
@@ -39,6 +41,8 @@
 		940F5CAC20D10AD1002B2AC5 /* ServiceOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceOrder.swift; sourceTree = "<group>"; };
 		940F5CBC20D1167D002B2AC5 /* RelatedParty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedParty.swift; sourceTree = "<group>"; };
 		940F5CBE20D116EC002B2AC5 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		940F5CC020D141CE002B2AC5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		940F5CC220D14218002B2AC5 /* ServiceCharacteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCharacteristic.swift; sourceTree = "<group>"; };
 		94149B8E20C9033E005CFCAE /* HandleMapSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleMapSearch.swift; sourceTree = "<group>"; };
 		94149B9220C94ECF005CFCAE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		94149B9420C960FC005CFCAE /* PostApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiCall.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				940F5CAC20D10AD1002B2AC5 /* ServiceOrder.swift */,
 				940F5CBC20D1167D002B2AC5 /* RelatedParty.swift */,
 				940F5CBE20D116EC002B2AC5 /* OrderItem.swift */,
+				940F5CC020D141CE002B2AC5 /* Service.swift */,
+				940F5CC220D14218002B2AC5 /* ServiceCharacteristic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 				940F5CBD20D1167D002B2AC5 /* RelatedParty.swift in Sources */,
 				9453562F20CE4EB00084009A /* HandleConfigureData.swift in Sources */,
 				940F5CAD20D10AD1002B2AC5 /* ServiceOrder.swift in Sources */,
+				940F5CC320D14218002B2AC5 /* ServiceCharacteristic.swift in Sources */,
 				9453562D20CE37940084009A /* NetworkManager.swift in Sources */,
 				940F5CBF20D116EC002B2AC5 /* OrderItem.swift in Sources */,
 				9453563420CE70E50084009A /* ParsePostApiResponse.swift in Sources */,
@@ -240,6 +247,7 @@
 				94DF8FF120C8096C00034C3F /* ViewController.swift in Sources */,
 				94DF8FF320C809AE00034C3F /* LocationSearchTableViewController.swift in Sources */,
 				600A552C20C7C2E800472982 /* AppDelegate.swift in Sources */,
+				940F5CC120D141CE002B2AC5 /* Service.swift in Sources */,
 				94CFFA1F20CA9BFA00F4A0E5 /* Utility.swift in Sources */,
 				94EA700120CFA89100DBD4B3 /* UIViewControllerExtension.swift in Sources */,
 				94CFFA1C20CA5B3E00F4A0E5 /* RestrictedLocation.swift in Sources */,

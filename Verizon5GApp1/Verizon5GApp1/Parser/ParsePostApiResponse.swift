@@ -10,54 +10,118 @@ import Foundation
 
 class ParsePostApiResponse {
     
-    func parseResponse(response: [String: Any]) -> PostApiCall {
-        let postApi = PostApiCall()
+    func parseResponse(response: [String: Any]) -> ServiceOrder {
+        let serviceOrder = ServiceOrder()
         
-        if let statusCode = response["status_code"] as? Int {
-            postApi.statusCode = statusCode
+        print(response)
+        
+        if let error = response["error"] as? [String: Any] {
+            if let cause = error["cause"] as? String {
+                serviceOrder.error = cause
+            }
+            if let description = error["description"] as? String {
+                serviceOrder.description = description
+            }
         }
         
-        if let message = response["message"] as? String {
-            postApi.message = message
+        if let externalId = response["externalId"] as? String {
+            serviceOrder.externalId = externalId
         }
         
-        guard let eventDetail = response["eventDetails"] as? [String: Any] else {
-            return postApi
-        }
-        
-        if let eventId = eventDetail["event_id"] as? String {
-            postApi.eventId = eventId
-        }
-        
-        if let eventSource = eventDetail["event_source"] as? String {
-            postApi.eventSource = eventSource
-        }
-        
-        if let eventType = eventDetail["event_type"] as? String {
-            postApi.eventType = eventType
-        }
-        
-        if let attributes = eventDetail["attributes"] as? [[String: Any]] {
+        if let relatedParty = response["relatedParty"] as? [[String: Any]] {
             
-            for attribute in attributes {
+            for dictionary in relatedParty {
                 
-                let idAndValues = PostApiIdAndValues()
+                let relatedParty = RelatedParty()
                 
-                if let id = attribute["id"] as? Int {
-                    idAndValues.id = id
+                if let id = dictionary["id"] as? String {
+                    relatedParty.id = id
                 }
                 
-                if let value = attribute["value"] as? String {
-                    idAndValues.value = value
+                if let name = dictionary["name"] as? String {
+                    relatedParty.name = name
                 }
                 
-                postApi.attributes?.append(idAndValues)
+                if let role = dictionary["role"] as? String {
+                    relatedParty.role = role
+                }
                 
+                serviceOrder.relatedParty?.append(relatedParty)
             }
             
         }
         
-        return postApi
+        if let orderItem = response["orderItem"] as? [[String: Any]] {
+            
+            for dictionary in orderItem {
+                
+                let orderItem = OrderItem()
+                
+                if let id = dictionary["id"] as? String {
+                    orderItem.id = id
+                }
+                
+                if let action = dictionary["action"] as? String {
+                    orderItem.action = action
+                }
+                
+                if let state = dictionary["state"] as? String {
+                    orderItem.state = state
+                }
+                
+                if let dictionary = dictionary["service"] as? [String: Any] {
+                    let service = Service()
+                    
+                    if let id = dictionary["id"] as? String {
+                        service.id = id
+                    }
+                    
+                    if let serviceCharacteristics = dictionary["serviceCharacteristic"] as? [[String: Any]] {
+                        
+                        for dictionary in serviceCharacteristics {
+                            
+                            let serviceCharacterstic = ServiceCharacteristic()
+                            if let name = dictionary["name"] as? String {
+                                serviceCharacterstic.name = name
+                            }
+                            if let value = dictionary["value"] as? String {
+                                serviceCharacterstic.value = value
+                            }
+                            
+                            service.serviceCharacteristic?.append(serviceCharacterstic)
+                        }
+                    }
+                }
+                
+                serviceOrder.orderItem?.append(orderItem)
+            }
+        }
+        
+        if let id = response["id"] as? String {
+            serviceOrder.id = id
+        }
+        
+        if let priority = response["priority"] as? String {
+            serviceOrder.priority = priority
+        }
+        
+        if let category = response["category"] as? String {
+            serviceOrder.category = category
+        }
+        
+        if let state = response["state"] as? String {
+            serviceOrder.state = state
+        }
+        
+        if let orderDate = response["orderDate"] as? String {
+            serviceOrder.orderDate = orderDate
+        }
+        
+        if let href = response["href"] as? String {
+            serviceOrder.href = href
+        }
+        
+        return serviceOrder
     }
     
 }

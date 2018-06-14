@@ -21,6 +21,7 @@
 		940F5CB620D10BA3002B2AC5 /* ParsePostApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CB520D10BA2002B2AC5 /* ParsePostApiResponse.swift */; };
 		940F5CBA20D10BF7002B2AC5 /* PostApiIdAndValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CB820D10BF7002B2AC5 /* PostApiIdAndValues.swift */; };
 		940F5CBB20D10BF7002B2AC5 /* PostApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CB920D10BF7002B2AC5 /* PostApiCall.swift */; };
+		940F5CC620D17C1C002B2AC5 /* HandleConfigureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F5CC520D17C1C002B2AC5 /* HandleConfigureData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		940F5CB520D10BA2002B2AC5 /* ParsePostApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsePostApiResponse.swift; sourceTree = "<group>"; };
 		940F5CB820D10BF7002B2AC5 /* PostApiIdAndValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostApiIdAndValues.swift; sourceTree = "<group>"; };
 		940F5CB920D10BF7002B2AC5 /* PostApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostApiCall.swift; sourceTree = "<group>"; };
+		940F5CC520D17C1C002B2AC5 /* HandleConfigureData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleConfigureData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		600A554820C7E63B00472982 /* Verizon5GApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				940F5CC420D17C1C002B2AC5 /* Protocol */,
 				940F5CB720D10BF7002B2AC5 /* Model */,
 				940F5CB420D10BA2002B2AC5 /* Parser */,
 				940F5CB120D10B60002B2AC5 /* Utility */,
@@ -130,6 +133,14 @@
 				940F5CB920D10BF7002B2AC5 /* PostApiCall.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		940F5CC420D17C1C002B2AC5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				940F5CC520D17C1C002B2AC5 /* HandleConfigureData.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940F5CC620D17C1C002B2AC5 /* HandleConfigureData.swift in Sources */,
 				940F5CBB20D10BF7002B2AC5 /* PostApiCall.swift in Sources */,
 				600A554C20C7E63B00472982 /* ViewController.swift in Sources */,
 				608EE9FB20CFD12C00E9168D /* ApplePayViewController.swift in Sources */,
