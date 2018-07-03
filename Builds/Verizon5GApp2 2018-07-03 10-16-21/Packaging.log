@@ -1,0 +1,385 @@
+2018-07-03 04:46:13 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7f867734a5b0; archive(resolved)='<IDEArchive: 0x7f8674707460>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team(resolved)='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	Chain (11, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7f867734a5b0; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7f86763225c0; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionContext: 0x7f8674ed5a30; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionContext: 0x7f867614c4d0; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionContext: 0x7f86771c8ac0; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionContext: 0x7f866a9a9ac0; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionContext: 0x7f8677356070; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionContext: 0x7f8674e232c0; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionContext: 0x7f8674427240; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='<IDEProvisioningBasicTeam: 0x7f8676009600; teamID='696775MLZ3', teamName='NetCracker Technology, Corp.'>'>
+	<IDEDistributionContext: 0x7f867727b580; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7f866c8a2790>', team='(null)'>
+	<IDEDistributionContext: 0x7f86760dbe50; archive = '<IDEArchive: 0x7f8674707460>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7f867734a5b0>
+2018-07-03 04:46:13 +0000  Processing step: IDEDistributionCreateDestRootStep
+2018-07-03 04:46:13 +0000  Processing step: IDEDistributionCopyItemStep
+2018-07-03 04:46:13 +0000  Running /usr/bin/ditto '-V' '/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app'
+2018-07-03 04:46:13 +0000  >>> Copying /Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app 
+2018-07-03 04:46:13 +0000  copying file ./_CodeSignature/CodeResources ... 
+2018-07-03 04:46:13 +0000  13631 bytes for ./_CodeSignature/CodeResources
+2018-07-03 04:46:13 +0000  copying file ./AppIcon60x60@2x.png ... 
+2018-07-03 04:46:13 +0000  22275 bytes for ./AppIcon60x60@2x.png
+copying file ./AppIcon60x60@3x.png ... 
+2018-07-03 04:46:13 +0000  36544 bytes for ./AppIcon60x60@3x.png
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/Main.storyboardc/fvu-wc-mZd-view-ebf-RN-i28.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:13 +0000  9564 bytes for ./Base.lproj/Main.storyboardc/fvu-wc-mZd-view-ebf-RN-i28.nib/objects-11.0+.nib
+copying file ./Base.lproj/Main.storyboardc/fvu-wc-mZd-view-ebf-RN-i28.nib/runtime.nib ... 
+2018-07-03 04:46:13 +0000  9569 bytes for ./Base.lproj/Main.storyboardc/fvu-wc-mZd-view-ebf-RN-i28.nib/runtime.nib
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:13 +0000  2337 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib
+copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib ... 
+2018-07-03 04:46:13 +0000  2464 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-DFf-x5-OSM.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:13 +0000  1660 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-DFf-x5-OSM.nib/objects-11.0+.nib
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-DFf-x5-OSM.nib/runtime.nib ... 
+2018-07-03 04:46:13 +0000  1660 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-DFf-x5-OSM.nib/runtime.nib
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/Main.storyboardc/SettingViewController.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:13 +0000  1048 bytes for ./Base.lproj/Main.storyboardc/SettingViewController.nib/objects-11.0+.nib
+copying file ./Base.lproj/Main.storyboardc/SettingViewController.nib/runtime.nib ... 
+2018-07-03 04:46:13 +0000  1048 bytes for ./Base.lproj/Main.storyboardc/SettingViewController.nib/runtime.nib
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2018-07-03 04:46:13 +0000  339 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:13 +0000  2331 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib ... 
+2018-07-03 04:46:13 +0000  2457 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:13 +0000  832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib ... 
+2018-07-03 04:46:13 +0000  832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib
+2018-07-03 04:46:13 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2018-07-03 04:46:13 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2018-07-03 04:46:13 +0000  copying file ./Assets.car ... 
+2018-07-03 04:46:13 +0000  8333560 bytes for ./Assets.car
+copying file ./Verizon5GApp2 ... 
+2018-07-03 04:46:13 +0000  1381808 bytes for ./Verizon5GApp2
+2018-07-03 04:46:13 +0000  copying file ./Frameworks/libswiftCoreImage.dylib ... 
+2018-07-03 04:46:13 +0000  307632 bytes for ./Frameworks/libswiftCoreImage.dylib
+2018-07-03 04:46:13 +0000  copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+2018-07-03 04:46:13 +0000  554096 bytes for ./Frameworks/libswiftObjectiveC.dylib
+2018-07-03 04:46:13 +0000  copying file ./Frameworks/libswiftCore.dylib ... 
+2018-07-03 04:46:13 +0000  66662544 bytes for ./Frameworks/libswiftCore.dylib
+2018-07-03 04:46:13 +0000  copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+2018-07-03 04:46:13 +0000  1628544 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+2018-07-03 04:46:13 +0000  copying file ./Frameworks/libswiftUIKit.dylib ... 
+2018-07-03 04:46:13 +0000  1043024 bytes for ./Frameworks/libswiftUIKit.dylib
+copying file ./Frameworks/libswiftMetal.dylib ... 
+2018-07-03 04:46:13 +0000  448880 bytes for ./Frameworks/libswiftMetal.dylib
+2018-07-03 04:46:13 +0000  copying file ./Frameworks/libswiftDispatch.dylib ... 
+2018-07-03 04:46:13 +0000  2722288 bytes for ./Frameworks/libswiftDispatch.dylib
+copying file ./Frameworks/libswiftos.dylib ... 
+2018-07-03 04:46:13 +0000  497152 bytes for ./Frameworks/libswiftos.dylib
+2018-07-03 04:46:13 +0000  copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+2018-07-03 04:46:13 +0000  257728 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+2018-07-03 04:46:13 +0000  copying file ./Frameworks/libswiftDarwin.dylib ... 
+2018-07-03 04:46:13 +0000  838720 bytes for ./Frameworks/libswiftDarwin.dylib
+copying file ./Frameworks/libswiftQuartzCore.dylib ... 
+2018-07-03 04:46:13 +0000  310608 bytes for ./Frameworks/libswiftQuartzCore.dylib
+copying file ./Frameworks/libswiftFoundation.dylib ... 
+2018-07-03 04:46:13 +0000  30165232 bytes for ./Frameworks/libswiftFoundation.dylib
+2018-07-03 04:46:13 +0000  2018-07-03 04:46:13 +0000  /usr/bin/ditto exited with 0
+
+2018-07-03 04:46:13 +0000  copying file ./embedded.mobileprovision ... 
+25511 bytes for ./embedded.mobileprovision
+copying file ./ApplePayViewController.nib/objects-11.0+.nib ... 
+11442 bytes for ./ApplePayViewController.nib/objects-11.0+.nib
+copying file ./ApplePayViewController.nib/runtime.nib ... 
+10783 bytes for ./ApplePayViewController.nib/runtime.nib
+copying file ./Info.plist ... 
+1291 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+8 bytes for ./PkgInfo
+2018-07-03 04:46:13 +0000  Processing step: IDEDistributionEmbedProfileStep
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f8674dd9d50 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f866bd89b50:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCore.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f86762e0eb0 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f8676cf4210:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f8676cf99e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f8674af7580:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f86769aee70 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f86761160f0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreImage.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f8674ae6500 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f8674ffa020:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftDarwin.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f8676206220 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f86745382c0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftDispatch.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f867685f5f0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f8674a27a80:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftFoundation.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f8674a6ae10 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f8676cef860:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftMetal.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f8676cf6ae0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f8674ab3630:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f86772c0d80 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f8674aeb450:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f866c993e00 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f8674569ee0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftUIKit.dylib'>'>
+2018-07-03 04:46:13 +0000  Skipping profile for item: <IDEDistributionItem: 0x7f8674905670 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f8674a5c510:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftos.dylib'>'>
+2018-07-03 04:46:13 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2018-07-03 04:46:13 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2018-07-03 04:46:13 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2018-07-03 04:46:13 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2018-07-03 04:46:14 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-07-03 04:46:14 +0000  Processing step: IDEDistributionSymbolsStep
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-07-03 04:46:14 +0000  Processing step: IDEDistributionAppThinningStep
+2018-07-03 04:46:14 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2018-07-03 04:46:14 +0000  Processing step: IDEDistributionODRStep
+2018-07-03 04:46:14 +0000  Processing step: IDEDistributionStripXattrsStep
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f8674dd9d50 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f866bd89b50:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCore.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f86762e0eb0 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f8676cf4210:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f8676cf99e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f8674af7580:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f86769aee70 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f86761160f0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreImage.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f8674ae6500 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f8674ffa020:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftDarwin.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f8676206220 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f86745382c0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftDispatch.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f867685f5f0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f8674a27a80:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftFoundation.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f8674a6ae10 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f8676cef860:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftMetal.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f8676cf6ae0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f8674ab3630:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f86772c0d80 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f8674aeb450:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f866c993e00 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f8674569ee0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftUIKit.dylib'>'>
+2018-07-03 04:46:14 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f8674905670 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f8674a5c510:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftos.dylib'>'>
+2018-07-03 04:46:14 +0000  Running /usr/bin/xattr '-crs' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app'
+2018-07-03 04:46:14 +0000  2018-07-03 04:46:14 +0000  
+
+2018-07-03 04:46:14 +0000  /usr/bin/xattr exited with 0
+2018-07-03 04:46:14 +0000  2018-07-03 04:46:14 +0000  
+
+2018-07-03 04:46:14 +0000  Processing step: IDEDistributionCodesignStep
+2018-07-03 04:46:14 +0000  Entitlements for <IDEDistributionItem: 0x7f8674dd9d50 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f866bd89b50:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCore.dylib'>'>: {
+}
+2018-07-03 04:46:14 +0000  Writing entitlements for <IDEDistributionItem: 0x7f8674dd9d50 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f866bd89b50:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCore.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsefrNxe
+2018-07-03 04:46:14 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsefrNxe' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftCore.dylib'
+2018-07-03 04:46:14 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2018-07-03 04:46:14 +0000  
+2018-07-03 04:46:14 +0000  
+2018-07-03 04:46:14 +0000  /usr/bin/codesign exited with 02018-07-03 04:46:14 +0000  
+
+2018-07-03 04:46:14 +0000  
+2018-07-03 04:46:14 +0000  Entitlements for <IDEDistributionItem: 0x7f86762e0eb0 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f8676cf4210:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreFoundation.dylib'>'>: {
+}
+2018-07-03 04:46:14 +0000  Writing entitlements for <IDEDistributionItem: 0x7f86762e0eb0 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f8676cf4210:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreFoundation.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsaz1hx5
+2018-07-03 04:46:14 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsaz1hx5' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftCoreFoundation.dylib'
+2018-07-03 04:46:14 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2018-07-03 04:46:14 +0000  
+2018-07-03 04:46:14 +0000  2018-07-03 04:46:14 +0000  /usr/bin/codesign exited with 0
+
+2018-07-03 04:46:14 +0000  
+2018-07-03 04:46:14 +0000  Entitlements for <IDEDistributionItem: 0x7f8676cf99e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f8674af7580:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreGraphics.dylib'>'>: {
+}
+2018-07-03 04:46:14 +0000  Writing entitlements for <IDEDistributionItem: 0x7f8676cf99e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f8674af7580:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreGraphics.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsHEkgXI
+2018-07-03 04:46:14 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsHEkgXI' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftCoreGraphics.dylib'
+2018-07-03 04:46:14 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2018-07-03 04:46:14 +0000  2018-07-03 04:46:14 +0000  2018-07-03 04:46:14 +0000  /usr/bin/codesign exited with 0
+
+
+2018-07-03 04:46:14 +0000  Entitlements for <IDEDistributionItem: 0x7f86769aee70 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f86761160f0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreImage.dylib'>'>: {
+}
+2018-07-03 04:46:14 +0000  Writing entitlements for <IDEDistributionItem: 0x7f86769aee70 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f86761160f0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftCoreImage.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsIS7NDQ
+2018-07-03 04:46:14 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsIS7NDQ' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftCoreImage.dylib'
+2018-07-03 04:46:15 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  2018-07-03 04:46:15 +0000  /usr/bin/codesign exited with 0
+
+2018-07-03 04:46:15 +0000  2018-07-03 04:46:15 +0000  
+
+2018-07-03 04:46:15 +0000  Entitlements for <IDEDistributionItem: 0x7f8674ae6500 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f8674ffa020:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftDarwin.dylib'>'>: {
+}
+2018-07-03 04:46:15 +0000  Writing entitlements for <IDEDistributionItem: 0x7f8674ae6500 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f8674ffa020:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftDarwin.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsHpitK2
+2018-07-03 04:46:15 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsHpitK2' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftDarwin.dylib'
+2018-07-03 04:46:15 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  2018-07-03 04:46:15 +0000  /usr/bin/codesign exited with 0
+
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  Entitlements for <IDEDistributionItem: 0x7f8676206220 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f86745382c0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftDispatch.dylib'>'>: {
+}
+2018-07-03 04:46:15 +0000  Writing entitlements for <IDEDistributionItem: 0x7f8676206220 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f86745382c0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftDispatch.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlements3NrCHR
+2018-07-03 04:46:15 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlements3NrCHR' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftDispatch.dylib'
+2018-07-03 04:46:15 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2018-07-03 04:46:15 +0000  2018-07-03 04:46:15 +0000  
+
+2018-07-03 04:46:15 +0000  /usr/bin/codesign exited with 0
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  Entitlements for <IDEDistributionItem: 0x7f867685f5f0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f8674a27a80:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftFoundation.dylib'>'>: {
+}
+2018-07-03 04:46:15 +0000  Writing entitlements for <IDEDistributionItem: 0x7f867685f5f0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f8674a27a80:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftFoundation.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlements8rPjXB
+2018-07-03 04:46:15 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlements8rPjXB' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftFoundation.dylib'
+2018-07-03 04:46:15 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  2018-07-03 04:46:15 +0000  /usr/bin/codesign exited with 0
+
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  Entitlements for <IDEDistributionItem: 0x7f8674a6ae10 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f8676cef860:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftMetal.dylib'>'>: {
+}
+2018-07-03 04:46:15 +0000  Writing entitlements for <IDEDistributionItem: 0x7f8674a6ae10 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f8676cef860:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftMetal.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsLHYXqF
+2018-07-03 04:46:15 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsLHYXqF' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftMetal.dylib'
+2018-07-03 04:46:15 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  2018-07-03 04:46:15 +0000  /usr/bin/codesign exited with 0
+
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  Entitlements for <IDEDistributionItem: 0x7f8676cf6ae0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f8674ab3630:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftObjectiveC.dylib'>'>: {
+}
+2018-07-03 04:46:15 +0000  Writing entitlements for <IDEDistributionItem: 0x7f8676cf6ae0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f8674ab3630:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftObjectiveC.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlements3Ivmlu
+2018-07-03 04:46:15 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlements3Ivmlu' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftObjectiveC.dylib'
+2018-07-03 04:46:15 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  2018-07-03 04:46:15 +0000  /usr/bin/codesign exited with 0
+
+2018-07-03 04:46:15 +0000  
+2018-07-03 04:46:15 +0000  Entitlements for <IDEDistributionItem: 0x7f86772c0d80 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f8674aeb450:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftQuartzCore.dylib'>'>: {
+}
+2018-07-03 04:46:15 +0000  Writing entitlements for <IDEDistributionItem: 0x7f86772c0d80 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f8674aeb450:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftQuartzCore.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsY5HFLV
+2018-07-03 04:46:15 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsY5HFLV' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftQuartzCore.dylib'
+2018-07-03 04:46:16 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  /usr/bin/codesign exited with 02018-07-03 04:46:16 +0000  
+
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  Entitlements for <IDEDistributionItem: 0x7f866c993e00 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f8674569ee0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftUIKit.dylib'>'>: {
+}
+2018-07-03 04:46:16 +0000  Writing entitlements for <IDEDistributionItem: 0x7f866c993e00 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f8674569ee0:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftUIKit.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsr4NgjB
+2018-07-03 04:46:16 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsr4NgjB' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftUIKit.dylib'
+2018-07-03 04:46:16 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  /usr/bin/codesign exited with 0
+2018-07-03 04:46:16 +0000  2018-07-03 04:46:16 +0000  
+
+2018-07-03 04:46:16 +0000  Entitlements for <IDEDistributionItem: 0x7f8674905670 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f8674a5c510:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftos.dylib'>'>: {
+}
+2018-07-03 04:46:16 +0000  Writing entitlements for <IDEDistributionItem: 0x7f8674905670 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f8674a5c510:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app/Frameworks/libswiftos.dylib'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlements1jJWhg
+2018-07-03 04:46:16 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlements1jJWhg' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftos.dylib'
+2018-07-03 04:46:16 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  /usr/bin/codesign exited with 02018-07-03 04:46:16 +0000  
+
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  Entitlements for <IDEDistributionItem: 0x7f86768866b0 'com.netcracker.Verizon5GApp2' '<DVTFilePath:0x7f86768c0840:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app'>'>: {
+    "application-identifier" = "696775MLZ3.com.netcracker.Verizon5GApp2";
+    "com.apple.developer.team-identifier" = 696775MLZ3;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "696775MLZ3.com.netcracker.Verizon5GApp2"
+    );
+}
+2018-07-03 04:46:16 +0000  Writing entitlements for <IDEDistributionItem: 0x7f86768866b0 'com.netcracker.Verizon5GApp2' '<DVTFilePath:0x7f86768c0840:'/Users/smitatamboli/Library/Developer/Xcode/Archives/2018-07-03/Verizon5GApp2 03-07-18, 10.15 AM.xcarchive/Products/Applications/Verizon5GApp2.app'>'> to: /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsiUctI8
+2018-07-03 04:46:16 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '6860BD0134D723D29AC98D7A38F30557BB113BCB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/entitlementsiUctI8' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app'
+2018-07-03 04:46:16 +0000  /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root/Payload/Verizon5GApp2.app: signed app bundle with Mach-O universal (armv7 arm64) [com.netcracker.Verizon5GApp2]
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  2018-07-03 04:46:16 +0000  /usr/bin/codesign exited with 0
+
+2018-07-03 04:46:16 +0000  
+2018-07-03 04:46:16 +0000  Processing step: IDEDistributionStreamingZipItemStep
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-07-03 04:46:16 +0000  Processing step: IDEDistributionCreateIPAStep
+2018-07-03 04:46:16 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root' '/var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Packages/Verizon5GApp2.ipa'
+2018-07-03 04:46:16 +0000  >>> Copying /var/folders/wt/7v7ms9bd7hvd46xfkv4bm_kc0000gn/T/XcodeDistPipeline.qeq/Root 
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/_CodeSignature/CodeResources ... 
+2018-07-03 04:46:16 +0000  13631 bytes for ./Payload/Verizon5GApp2.app/_CodeSignature/CodeResources
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/AppIcon60x60@2x.png ... 
+2018-07-03 04:46:16 +0000  22275 bytes for ./Payload/Verizon5GApp2.app/AppIcon60x60@2x.png
+copying file ./Payload/Verizon5GApp2.app/AppIcon60x60@3x.png ... 
+2018-07-03 04:46:16 +0000  36544 bytes for ./Payload/Verizon5GApp2.app/AppIcon60x60@3x.png
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/fvu-wc-mZd-view-ebf-RN-i28.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:16 +0000  9564 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/fvu-wc-mZd-view-ebf-RN-i28.nib/objects-11.0+.nib
+copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/fvu-wc-mZd-view-ebf-RN-i28.nib/runtime.nib ... 
+2018-07-03 04:46:16 +0000  9569 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/fvu-wc-mZd-view-ebf-RN-i28.nib/runtime.nib
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:16 +0000  2337 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib
+copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib ... 
+2018-07-03 04:46:16 +0000  2464 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/UINavigationController-DFf-x5-OSM.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:16 +0000  1660 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/UINavigationController-DFf-x5-OSM.nib/objects-11.0+.nib
+copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/UINavigationController-DFf-x5-OSM.nib/runtime.nib ... 
+2018-07-03 04:46:16 +0000  1660 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/UINavigationController-DFf-x5-OSM.nib/runtime.nib
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/SettingViewController.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:16 +0000  1048 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/SettingViewController.nib/objects-11.0+.nib
+copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/SettingViewController.nib/runtime.nib ... 
+2018-07-03 04:46:16 +0000  1048 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/SettingViewController.nib/runtime.nib
+copying file ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2018-07-03 04:46:16 +0000  339 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/Main.storyboardc/Info.plist
+copying file ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:16 +0000  2331 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib ... 
+2018-07-03 04:46:16 +0000  2457 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib
+copying file ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:16 +0000  832 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib
+copying file ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib ... 
+2018-07-03 04:46:16 +0000  832 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Payload/Verizon5GApp2.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Assets.car ... 
+2018-07-03 04:46:16 +0000  8333560 bytes for ./Payload/Verizon5GApp2.app/Assets.car
+copying file ./Payload/Verizon5GApp2.app/Verizon5GApp2 ... 
+2018-07-03 04:46:16 +0000  343168 bytes for ./Payload/Verizon5GApp2.app/Verizon5GApp2
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftCoreImage.dylib ... 
+2018-07-03 04:46:16 +0000  209264 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftCoreImage.dylib
+2018-07-03 04:46:16 +0000  copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftObjectiveC.dylib ... 
+2018-07-03 04:46:16 +0000  258288 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftObjectiveC.dylib
+copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftCore.dylib ... 
+2018-07-03 04:46:17 +0000  18063840 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftCore.dylib
+2018-07-03 04:46:17 +0000  copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2018-07-03 04:46:17 +0000  608944 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftCoreGraphics.dylib
+2018-07-03 04:46:17 +0000  copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftUIKit.dylib ... 
+2018-07-03 04:46:17 +0000  451056 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftUIKit.dylib
+copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftMetal.dylib ... 
+2018-07-03 04:46:17 +0000  251792 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftMetal.dylib
+copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftDispatch.dylib ... 
+2018-07-03 04:46:17 +0000  978448 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftDispatch.dylib
+copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftos.dylib ... 
+2018-07-03 04:46:17 +0000  250704 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftos.dylib
+copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2018-07-03 04:46:17 +0000  208736 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftCoreFoundation.dylib
+copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftDarwin.dylib ... 
+2018-07-03 04:46:17 +0000  362064 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftDarwin.dylib
+2018-07-03 04:46:17 +0000  copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftQuartzCore.dylib ... 
+2018-07-03 04:46:17 +0000  212240 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftQuartzCore.dylib
+copying file ./Payload/Verizon5GApp2.app/Frameworks/libswiftFoundation.dylib ... 
+2018-07-03 04:46:18 +0000  8561888 bytes for ./Payload/Verizon5GApp2.app/Frameworks/libswiftFoundation.dylib
+2018-07-03 04:46:18 +0000  copying file ./Payload/Verizon5GApp2.app/embedded.mobileprovision ... 
+25511 bytes for ./Payload/Verizon5GApp2.app/embedded.mobileprovision
+copying file ./Payload/Verizon5GApp2.app/ApplePayViewController.nib/objects-11.0+.nib ... 
+2018-07-03 04:46:18 +0000  11442 bytes for ./Payload/Verizon5GApp2.app/ApplePayViewController.nib/objects-11.0+.nib
+copying file ./Payload/Verizon5GApp2.app/ApplePayViewController.nib/runtime.nib ... 
+2018-07-03 04:46:18 +0000  10783 bytes for ./Payload/Verizon5GApp2.app/ApplePayViewController.nib/runtime.nib
+2018-07-03 04:46:18 +0000  copying file ./Payload/Verizon5GApp2.app/Info.plist ... 
+2018-07-03 04:46:18 +0000  1291 bytes for ./Payload/Verizon5GApp2.app/Info.plist
+copying file ./Payload/Verizon5GApp2.app/PkgInfo ... 
+8 bytes for ./Payload/Verizon5GApp2.app/PkgInfo
+2018-07-03 04:46:18 +0000  copying file ./AppThinning.plist ... 
+228 bytes for ./AppThinning.plist
+2018-07-03 04:46:18 +0000  2018-07-03 04:46:18 +0000  2018-07-03 04:46:18 +0000  /usr/bin/ditto exited with 0
+
+
+2018-07-03 04:46:18 +0000  Processing step: IDEDistributionCreateManifestStep
